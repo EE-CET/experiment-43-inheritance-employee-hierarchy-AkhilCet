@@ -30,7 +30,7 @@ class Officer extends Employee{
 class Manager extends Employee{
    string department;
 
-   Officer(String n,int a,double pN,string ad,int s,String d)
+   Manager(String n,int a,double pN,string ad,int s,String d)
    {
       super(n,a,pN,ad,s);
       this.department = d;
