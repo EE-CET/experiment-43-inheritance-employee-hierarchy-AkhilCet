@@ -5,9 +5,9 @@ class Employee {
    int age;
    double phoneNumber;
    string address;
-   float salary;
+   int salary;
 
-   Employee(String n,int a,double pN,string ad,float s)
+   Employee(String n,int a,double pN,string ad,int s)
    {
       this.name = n;
       this.age = a;
@@ -20,7 +20,7 @@ class Employee {
 class Officer extends Employee{
    string specialization;
 
-   Officer(String n,int a,double pN,string ad,float s,String sp)
+   Officer(String n,int a,double pN,string ad,int s,String sp)
    {
       super(n,a,pN,ad,s);
       this.specialization = sp;
@@ -30,7 +30,7 @@ class Officer extends Employee{
 class Manager extends Employee{
    string department;
 
-   Officer(String n,int a,double pN,string ad,float s,String d)
+   Officer(String n,int a,double pN,string ad,int s,String d)
    {
       super(n,a,pN,ad,s);
       this.department = d;
@@ -46,7 +46,7 @@ public class EmployeeInheritance {
       int age = input.nextInt();
       double phone = input.nextDouble();
       String ad = input.nextLine();
-      float sal = input.nextFloat();
+      int sal = input.nextInt();
       String spec = input.nextLine();
 
       Officer off1 = new Officer(name,age,phone,ad,sal,spec);
@@ -55,7 +55,7 @@ public class EmployeeInheritance {
       age = input.nextInt();
       phone = input.nextDouble();
       ad = input.nextLine();
-      sal = input.nextFloat();
+      sal = input.nextInt();
       spec = input.nextLine();
       
       Manager man1 = new Manager(name,age,phone,ad,sal,spec);
