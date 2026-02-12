@@ -79,7 +79,7 @@ public class EmployeeInheritance {
       System.out.println(man1.phoneNumber);
       System.out.println(man1.address);
       System.out.println(man1.salary);
-      System.out.print(man1.department);
+      System.out.println(man1.department);
       
       input.close();
    }
