@@ -60,21 +60,21 @@ public class EmployeeInheritance {
       
       Manager man1 = new Manager(name,age,phone,ad,sal,spec);
 
-      Syetem.out.println("Offcier:");
-      Syetem.out.println(off1.name);
-      Syetem.out.println(off1.age);
-      Syetem.out.println(off1.phoneNumber);
-      Syetem.out.println(off1.address);
-      Syetem.out.println(off1.salary);
-      Syetem.out.println(off1.specialization);
+      System.out.println("Offcier:");
+      System.out.println(off1.name);
+      System.out.println(off1.age);
+      System.out.println(off1.phoneNumber);
+      System.out.println(off1.address);
+      System.out.println(off1.salary);
+      System.out.println(off1.specialization);
 
-      Syetem.out.println("Manager:");
-      Syetem.out.println(man1.name);
-      Syetem.out.println(man1.age);
-      Syetem.out.println(man1.phoneNumber);
-      Syetem.out.println(man1.address);
-      Syetem.out.println(man1.salary);
-      Syetem.out.print(man1.department);
+      System.out.println("Manager:");
+      System.out.println(man1.name);
+      System.out.println(man1.age);
+      System.out.println(man1.phoneNumber);
+      System.out.println(man1.address);
+      System.out.println(man1.salary);
+      System.out.print(man1.department);
       
    }
     
