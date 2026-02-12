@@ -4,10 +4,10 @@ class Employee {
    String name;
    int age;
    double phoneNumber;
-   string address;
+   String address;
    int salary;
 
-   Employee(String n,int a,double pN,string ad,int s)
+   Employee(String n,int a,double pN,String ad,int s)
    {
       this.name = n;
       this.age = a;
@@ -18,7 +18,7 @@ class Employee {
 }
 
 class Officer extends Employee{
-   string specialization;
+   String specialization;
 
    Officer(String n,int a,double pN,String ad,int s,String sp)
    {
@@ -28,7 +28,7 @@ class Officer extends Employee{
 }
 
 class Manager extends Employee{
-   string department;
+   String department;
 
    Manager(String n,int a,double pN,String ad,int s,String d)
    {
