@@ -5,9 +5,9 @@ class Employee {
    int age;
    String phoneNumber;
    String address;
-   int salary;
+   double salary;
 
-   Employee(String n,int a,String pN,String ad,int s)
+   Employee(String n,int a,String pN,String ad,double s)
    {
       this.name = n;
       this.age = a;
@@ -20,7 +20,7 @@ class Employee {
 class Officer extends Employee{
    String specialization;
 
-   Officer(String n,int a,String pN,String ad,int s,String sp)
+   Officer(String n,int a,String pN,String ad,double s,String sp)
    {
       super(n,a,pN,ad,s);
       this.specialization = sp;
@@ -30,7 +30,7 @@ class Officer extends Employee{
 class Manager extends Employee{
    String department;
 
-   Manager(String n,int a,String pN,String ad,int s,String d)
+   Manager(String n,int a,String pN,String ad,double s,String d)
    {
       super(n,a,pN,ad,s);
       this.department = d;
@@ -49,7 +49,7 @@ public class EmployeeInheritance {
       input.nextLine(); // Consume newline left-over
       String phone1 = input.nextLine();
       String ad1 = input.nextLine();
-      int sal1 = input.nextInt();
+      double sal1 = input.nextDouble();
       input.nextLine(); // Consume newline left-over
       String spec1 = input.nextLine();
 
@@ -60,12 +60,12 @@ public class EmployeeInheritance {
       input.nextLine(); // Consume newline left-over
       String phone2 = input.nextLine();
       String ad2 = input.nextLine();
-      int sal2 = input.nextInt();
+      double sal2 = input.nextDouble();
       input.nextLine(); // Consume newline left-over
       String dept1 = input.nextLine();
       Manager man1 = new Manager(name2,age2,phone2,ad2,sal2,dept1);
 
-      System.out.println("Offcier:");
+      System.out.println("Officer:");
       System.out.println(off1.name);
       System.out.println(off1.age);
       System.out.println(off1.phoneNumber);
